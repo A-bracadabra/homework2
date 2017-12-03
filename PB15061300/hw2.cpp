@@ -36,6 +36,7 @@ int ustc_Find_Circles_By_Difference(Mat colorImg, int min_radius, int max_radius
 	int *xp = hugeX, *yp = hugeY, *rp = hugeR;
 	int *hugeN = new int;
 	*hugeN = 0;
+	min_center_dist /= sqrt(2);
 	if (NULL == colorImg.data)
 	{
 		cout << "image is NULL." << endl;
